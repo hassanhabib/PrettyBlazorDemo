@@ -1,0 +1,13 @@
+﻿@page "/"
+
+<Iterations Items="Numbers">
+    <Iteration>
+        <Condition Evaluation="@(context % 2 is 0)">
+            <Match>
+                <p>
+                    @context is even
+                </p>
+            </Match>
+        </Condition>
+    </Iteration>
+</Iterations>
